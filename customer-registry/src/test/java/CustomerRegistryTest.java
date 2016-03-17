@@ -1,6 +1,7 @@
-import AbstractTCFTest;
-import fr.unice.polytech.isa.tcf.entities.Customer;
-import fr.unice.polytech.isa.tcf.exceptions.AlreadyExistingCustomerException;
+import customer.registry.CustomerFinder;
+import customer.registry.CustomerRegistration;
+import entities.Customer;
+import exceptions.AlreadyExistingCustomerException;
 import org.jboss.arquillian.junit.Arquillian;
 import org.junit.Before;
 import org.junit.Test;

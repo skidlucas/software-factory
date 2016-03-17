@@ -1,11 +1,8 @@
-
-import cart.CartModifier;
-import cart.components.CartBean;
-import customer.registry.components.CustomerRegistryBean;
 import database.Database;
 import entities.Customer;
 import exceptions.AlreadyExistingCustomerException;
 import interceptors.Logger;
+import kitchen.components.KitchenBean;
 import org.jboss.arquillian.container.test.api.Deployment;
 import org.jboss.shrinkwrap.api.ShrinkWrap;
 import org.jboss.shrinkwrap.api.asset.EmptyAsset;
@@ -28,15 +25,13 @@ public abstract class AbstractTCFTest {
 				.addPackage(Database.class.getPackage())
 				// Entities
 				.addPackage(Customer.class.getPackage())
-				// Components Interfaces
-				.addPackage(CartModifier.class.getPackage())
+				// Cart components
 				// Interceptors
 				.addPackage(Logger.class.getPackage())
 				// Exceptions
 				.addPackage(AlreadyExistingCustomerException.class.getPackage())
+				.addPackage(KitchenBean.class.getPackage());
 				// Components implementations
-				.addPackage(CartBean.class.getPackage())
-				.addPackage(CustomerRegistryBean.class.getPackage());
 	}
 
 }
