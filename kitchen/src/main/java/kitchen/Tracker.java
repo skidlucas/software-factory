@@ -1,3 +1,5 @@
+package kitchen;
+
 import fr.unice.polytech.isa.tcf.entities.OrderStatus;
 import fr.unice.polytech.isa.tcf.exceptions.UnknownOrderId;
 

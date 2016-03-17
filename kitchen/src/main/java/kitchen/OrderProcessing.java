@@ -1,3 +1,5 @@
+package kitchen;
+
 import fr.unice.polytech.isa.tcf.entities.Order;
 
 import javax.ejb.Local;

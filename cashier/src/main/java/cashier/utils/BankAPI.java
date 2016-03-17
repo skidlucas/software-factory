@@ -1,4 +1,4 @@
-package utils;
+package cashier.utils;
 
 import fr.unice.polytech.isa.tcf.entities.Customer;
 import fr.unice.polytech.isa.tcf.exceptions.ExternalPartnerException;

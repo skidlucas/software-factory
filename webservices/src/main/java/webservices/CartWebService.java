@@ -1,4 +1,4 @@
-package webservice;
+package webservices;
 
 import fr.unice.polytech.isa.tcf.entities.Item;
 import fr.unice.polytech.isa.tcf.exceptions.PaymentException;

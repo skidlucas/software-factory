@@ -1,4 +1,4 @@
-package components;
+package cashier.components;
 
 import fr.unice.polytech.isa.tcf.OrderProcessing;
 import fr.unice.polytech.isa.tcf.Payment;

@@ -1,4 +1,4 @@
-package webservice;
+package webservices;
 
 import fr.unice.polytech.isa.tcf.entities.Cookies;
 import fr.unice.polytech.isa.tcf.entities.OrderStatus;

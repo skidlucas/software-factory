@@ -1,4 +1,4 @@
-package components;
+package cart.stateful.components;
 
 import fr.unice.polytech.isa.tcf.components.CartBean;
 import fr.unice.polytech.isa.tcf.entities.Customer;

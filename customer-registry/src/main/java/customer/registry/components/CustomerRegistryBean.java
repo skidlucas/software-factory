@@ -1,4 +1,4 @@
-package components;
+package customer.registry.components;
 
 import fr.unice.polytech.isa.tcf.CustomerFinder;
 import fr.unice.polytech.isa.tcf.CustomerRegistration;

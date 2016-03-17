@@ -1,4 +1,4 @@
-package components;
+package kitchen.components;
 
 import fr.unice.polytech.isa.tcf.OrderProcessing;
 import fr.unice.polytech.isa.tcf.Tracker;

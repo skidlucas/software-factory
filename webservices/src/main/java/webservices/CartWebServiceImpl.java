@@ -1,4 +1,4 @@
-package webservice;
+package webservices;
 
 import fr.unice.polytech.isa.tcf.CartModifier;
 import fr.unice.polytech.isa.tcf.CustomerFinder;
