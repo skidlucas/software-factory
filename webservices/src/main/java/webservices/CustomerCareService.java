@@ -17,13 +17,13 @@ public interface CustomerCareService {
 	@WebMethod
 	void register(@WebParam(name="customer_name") String name,
 				  @WebParam(name="credit_card_number") String creditCard)
-			throws AlreadyExistingCustomerException, AlreadyExistingCustomerException;
+			throws AlreadyExistingCustomerException;
 
 
 	@WebMethod
 	@WebResult(name = "status")
 	OrderStatus track(@WebParam(name="order_id") String orderId)
-		throws UnknownOrderId, UnknownOrderId;
+		throws UnknownOrderId;
 
 	@WebMethod
 	@WebResult(name = "recipes")
