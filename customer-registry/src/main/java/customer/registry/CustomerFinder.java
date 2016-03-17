@@ -1,6 +1,7 @@
 package customer.registry;
 
-import fr.unice.polytech.isa.tcf.entities.Customer;
+
+import entities.Customer;
 
 import javax.ejb.Local;
 import java.util.Optional;

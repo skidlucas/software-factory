@@ -1,9 +1,9 @@
 package webservices;
 
-import fr.unice.polytech.isa.tcf.entities.Cookies;
-import fr.unice.polytech.isa.tcf.entities.OrderStatus;
-import fr.unice.polytech.isa.tcf.exceptions.AlreadyExistingCustomerException;
-import fr.unice.polytech.isa.tcf.exceptions.UnknownOrderId;
+import entities.Cookies;
+import entities.OrderStatus;
+import exceptions.AlreadyExistingCustomerException;
+import exceptions.UnknownOrderId;
 
 import javax.jws.WebMethod;
 import javax.jws.WebParam;
@@ -17,13 +17,13 @@ public interface CustomerCareService {
 	@WebMethod
 	void register(@WebParam(name="customer_name") String name,
 				  @WebParam(name="credit_card_number") String creditCard)
-			throws AlreadyExistingCustomerException;
+			throws AlreadyExistingCustomerException, AlreadyExistingCustomerException;
 
 
 	@WebMethod
 	@WebResult(name = "status")
 	OrderStatus track(@WebParam(name="order_id") String orderId)
-		throws UnknownOrderId;
+		throws UnknownOrderId, UnknownOrderId;
 
 	@WebMethod
 	@WebResult(name = "recipes")

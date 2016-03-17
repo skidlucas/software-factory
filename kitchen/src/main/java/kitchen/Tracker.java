@@ -1,7 +1,7 @@
 package kitchen;
 
-import fr.unice.polytech.isa.tcf.entities.OrderStatus;
-import fr.unice.polytech.isa.tcf.exceptions.UnknownOrderId;
+import entities.OrderStatus;
+import exceptions.UnknownOrderId;
 
 import javax.ejb.Local;
 

@@ -1,13 +1,13 @@
 package webservices;
 
 
-import fr.unice.polytech.isa.tcf.CatalogueExploration;
-import fr.unice.polytech.isa.tcf.CustomerRegistration;
-import fr.unice.polytech.isa.tcf.Tracker;
-import fr.unice.polytech.isa.tcf.entities.Cookies;
-import fr.unice.polytech.isa.tcf.entities.OrderStatus;
-import fr.unice.polytech.isa.tcf.exceptions.AlreadyExistingCustomerException;
-import fr.unice.polytech.isa.tcf.exceptions.UnknownOrderId;
+import catalogue.CatalogueExploration;
+import customer.registry.CustomerRegistration;
+import entities.Cookies;
+import entities.OrderStatus;
+import exceptions.AlreadyExistingCustomerException;
+import exceptions.UnknownOrderId;
+import kitchen.Tracker;
 
 import javax.ejb.EJB;
 import javax.ejb.Stateless;

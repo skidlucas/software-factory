@@ -1,11 +1,11 @@
 package webservices;
 
-import fr.unice.polytech.isa.tcf.CartModifier;
-import fr.unice.polytech.isa.tcf.CustomerFinder;
-import fr.unice.polytech.isa.tcf.entities.Customer;
-import fr.unice.polytech.isa.tcf.entities.Item;
-import fr.unice.polytech.isa.tcf.exceptions.PaymentException;
-import fr.unice.polytech.isa.tcf.exceptions.UnknownCustomerException;
+import cart.CartModifier;
+import customer.registry.CustomerFinder;
+import entities.Customer;
+import entities.Item;
+import exceptions.PaymentException;
+import exceptions.UnknownCustomerException;
 
 import javax.ejb.EJB;
 import javax.ejb.Stateless;

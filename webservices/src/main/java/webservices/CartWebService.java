@@ -1,9 +1,9 @@
 package webservices;
 
-import fr.unice.polytech.isa.tcf.entities.Item;
-import fr.unice.polytech.isa.tcf.exceptions.PaymentException;
-import fr.unice.polytech.isa.tcf.exceptions.UnknownCustomerException;
-import fr.unice.polytech.isa.tcf.interceptors.ItemVerifier;
+import entities.Item;
+import exceptions.PaymentException;
+import exceptions.UnknownCustomerException;
+import interceptors.ItemVerifier;
 
 import javax.interceptor.Interceptors;
 import javax.jws.WebMethod;
