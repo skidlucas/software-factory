@@ -5,8 +5,21 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>fr.unice.polytech.isa</groupId>
     <artifactId>tcf-backend</artifactId>
-    <packaging>war</packaging>
+    <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>../webservices</module>
+        <module>../catalogue</module>
+        <module>../business</module>
+        <module>../kitchen</module>
+        <module>../customer-registry</module>
+        <module>../exceptions</module>
+        <module>../cashier</module>
+        <module>../cart</module>
+        <module>../stateful-cart</module>
+        <module>../stateless-cart</module>
+        <module>../database</module>
+    </modules>
     <name>ISA :: The Cookie Factory :: J2E Backend</name>
 
     <properties>

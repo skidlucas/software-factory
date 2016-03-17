@@ -15,7 +15,7 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import javax.ejb.EJB;
 // static import to lighten test writing
-import static org.junit.Assert.*;
+
 
 @RunWith(Arquillian.class)
 public class CartTest extends AbstractTCFTest {

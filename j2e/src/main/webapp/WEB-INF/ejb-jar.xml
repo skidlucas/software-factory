@@ -4,7 +4,7 @@
     <assembly-descriptor>
         <interceptor-binding>
             <ejb-name>*</ejb-name>
-            <interceptor-class>fr.unice.polytech.isa.tcf.interceptors.Logger</interceptor-class>
+            <interceptor-class>interceptors.Logger</interceptor-class>
         </interceptor-binding>
     </assembly-descriptor>
 </ejb-jar>

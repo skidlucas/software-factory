@@ -1,0 +1,14 @@
+Modules:
+
+- interface CartModifier 
+- Cart + Cashier (+ interface Payment)
+- Kitchen (+ interfaces OrderProcessing, Tracker)
+- CustomerRegistry (+ interfaces CustomerFinder, CustomerRegistration)
+- Catalogue (+ interface CatalogueExploration)
+- BankService (+ interface BankPayment)
+- CustomerCareService (+ interface CustomerCareWS)
+- CartWebService (+ interface CartWS)
+- Client
+- Entities (objets métiers)
+
+=> 
