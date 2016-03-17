@@ -1,10 +1,11 @@
 package database;
 
-import fr.unice.polytech.isa.tcf.entities.Customer;
-import fr.unice.polytech.isa.tcf.entities.Item;
-import fr.unice.polytech.isa.tcf.entities.Order;
+
+import entities.Customer;
+import entities.Item;
 
 import javax.ejb.Singleton;
+import javax.persistence.criteria.Order;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
