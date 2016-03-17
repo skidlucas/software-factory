@@ -1,6 +1,6 @@
 package customer.registry;
 
-import fr.unice.polytech.isa.tcf.exceptions.AlreadyExistingCustomerException;
+import exceptions.AlreadyExistingCustomerException;
 
 import javax.ejb.Local;
 

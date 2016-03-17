@@ -1,8 +1,8 @@
 package cart.components;
 
 
-import fr.unice.polytech.isa.tcf.CartModifier;
-import fr.unice.polytech.isa.tcf.Payment;
+import cart.CartModifier;
+import cashier.Payment;
 import entities.Customer;
 import entities.Item;
 import exceptions.PaymentException;

@@ -1,10 +1,10 @@
 package customer.registry.components;
 
-import fr.unice.polytech.isa.tcf.CustomerFinder;
-import fr.unice.polytech.isa.tcf.CustomerRegistration;
-import fr.unice.polytech.isa.tcf.entities.Customer;
-import fr.unice.polytech.isa.tcf.exceptions.AlreadyExistingCustomerException;
-import fr.unice.polytech.isa.tcf.utils.Database;
+import customer.registry.CustomerFinder;
+import customer.registry.CustomerRegistration;
+import database.Database;
+import entities.Customer;
+import exceptions.AlreadyExistingCustomerException;
 
 import javax.ejb.EJB;
 import javax.ejb.Stateless;

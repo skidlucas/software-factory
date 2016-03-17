@@ -1,9 +1,9 @@
 package cashier;
 
-import fr.unice.polytech.isa.tcf.entities.Customer;
-import fr.unice.polytech.isa.tcf.entities.Item;
-import fr.unice.polytech.isa.tcf.exceptions.PaymentException;
-import fr.unice.polytech.isa.tcf.utils.BankAPI;
+import entities.Customer;
+import entities.Item;
+import exceptions.PaymentException;
+import cashier.utils.BankAPI;
 
 import javax.ejb.Local;
 import java.util.Set;

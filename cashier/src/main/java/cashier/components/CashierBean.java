@@ -1,14 +1,14 @@
 package cashier.components;
 
-import fr.unice.polytech.isa.tcf.OrderProcessing;
-import fr.unice.polytech.isa.tcf.Payment;
-import fr.unice.polytech.isa.tcf.entities.Customer;
-import fr.unice.polytech.isa.tcf.entities.Item;
-import fr.unice.polytech.isa.tcf.entities.Order;
-import fr.unice.polytech.isa.tcf.exceptions.ExternalPartnerException;
-import fr.unice.polytech.isa.tcf.exceptions.PaymentException;
-import fr.unice.polytech.isa.tcf.utils.BankAPI;
-import fr.unice.polytech.isa.tcf.utils.Database;
+import cashier.utils.BankAPI;
+import kitchen.OrderProcessing;
+import cashier.Payment;
+import entities.Customer;
+import entities.Item;
+import entities.Order;
+import exceptions.ExternalPartnerException;
+import exceptions.PaymentException;
+import database.Database;
 
 import javax.annotation.PostConstruct;
 import javax.ejb.EJB;

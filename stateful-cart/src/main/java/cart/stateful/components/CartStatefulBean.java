@@ -1,12 +1,15 @@
 package cart.stateful.components;
 
-import fr.unice.polytech.isa.tcf.components.CartBean;
-import fr.unice.polytech.isa.tcf.entities.Customer;
-import fr.unice.polytech.isa.tcf.entities.Item;
+
+import cart.components.CartBean;
+import entities.Customer;
+import entities.Item;
 
 import javax.ejb.Stateful;
-import java.util.*;
-
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Map;
+import java.util.Set;
 
 @Stateful(name = "cart-stateful")
 public class CartStatefulBean extends CartBean {

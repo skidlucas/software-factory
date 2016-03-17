@@ -1,14 +1,15 @@
 package cart.stateless.components;
 
-import fr.unice.polytech.isa.tcf.components.CartBean;
-import fr.unice.polytech.isa.tcf.entities.Customer;
-import fr.unice.polytech.isa.tcf.entities.Item;
-import fr.unice.polytech.isa.tcf.utils.Database;
+
+import cart.components.CartBean;
+import database.Database;
+import entities.Customer;
+import entities.Item;
 
 import javax.ejb.EJB;
 import javax.ejb.Stateless;
-import java.util.*;
-
+import java.util.HashSet;
+import java.util.Set;
 
 @Stateless(name = "cart-stateless")
 public class CartStatelessBean extends CartBean {

@@ -1,11 +1,12 @@
 package kitchen.components;
 
-import fr.unice.polytech.isa.tcf.OrderProcessing;
-import fr.unice.polytech.isa.tcf.Tracker;
-import fr.unice.polytech.isa.tcf.entities.Order;
-import fr.unice.polytech.isa.tcf.entities.OrderStatus;
-import fr.unice.polytech.isa.tcf.exceptions.UnknownOrderId;
-import fr.unice.polytech.isa.tcf.utils.Database;
+
+import database.Database;
+import entities.Order;
+import entities.OrderStatus;
+import exceptions.UnknownOrderId;
+import kitchen.OrderProcessing;
+import kitchen.Tracker;
 
 import javax.ejb.EJB;
 import javax.ejb.Stateless;
