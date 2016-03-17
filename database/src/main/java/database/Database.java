@@ -3,9 +3,9 @@ package database;
 
 import entities.Customer;
 import entities.Item;
+import entities.Order;
 
 import javax.ejb.Singleton;
-import javax.persistence.criteria.Order;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
