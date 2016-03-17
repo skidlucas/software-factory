@@ -14,7 +14,6 @@
         <module>../kitchen</module>
         <module>../customer-registry</module>
         <module>../exceptions</module>
-        <module>../cashier</module>
         <module>../cart</module>
         <module>../stateful-cart</module>
         <module>../stateless-cart</module>

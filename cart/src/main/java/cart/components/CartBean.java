@@ -2,7 +2,7 @@ package cart.components;
 
 
 import cart.CartModifier;
-import cashier.Payment;
+import cart.Payment;
 import entities.Customer;
 import entities.Item;
 import exceptions.PaymentException;

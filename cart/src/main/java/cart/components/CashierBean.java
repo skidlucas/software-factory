@@ -1,8 +1,8 @@
-package cashier.components;
+package cart.components;
 
-import cashier.utils.BankAPI;
+import cart.utils.BankAPI;
 import kitchen.OrderProcessing;
-import cashier.Payment;
+import cart.Payment;
 import entities.Customer;
 import entities.Item;
 import entities.Order;

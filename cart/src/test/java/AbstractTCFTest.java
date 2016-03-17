@@ -1,6 +1,6 @@
 import cart.CartModifier;
 import cart.components.CartBean;
-import cashier.components.CashierBean;
+import cart.Payment;
 import database.Database;
 import entities.Customer;
 import exceptions.AlreadyExistingCustomerException;
@@ -36,7 +36,7 @@ public abstract class AbstractTCFTest {
 				.addPackage(AlreadyExistingCustomerException.class.getPackage())
 				// Components implementations
 				.addPackage(CartBean.class.getPackage())
-				.addPackage(CashierBean.class.getPackage())
+				.addPackage(Payment.class.getPackage())
 				.addPackage(KitchenBean.class.getPackage());
 	}
 

@@ -1,9 +1,9 @@
-package cashier;
+package cart;
 
 import entities.Customer;
 import entities.Item;
 import exceptions.PaymentException;
-import cashier.utils.BankAPI;
+import cart.utils.BankAPI;
 
 import javax.ejb.Local;
 import java.util.Set;

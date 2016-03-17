@@ -1,6 +1,6 @@
 
-import cashier.Payment;
-import cashier.utils.BankAPI;
+import cart.Payment;
+import cart.utils.BankAPI;
 import entities.Cookies;
 import entities.Customer;
 import entities.Item;

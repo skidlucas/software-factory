@@ -1,4 +1,4 @@
-package cashier.utils;
+package cart.utils;
 
 import entities.Customer;
 import exceptions.ExternalPartnerException;
