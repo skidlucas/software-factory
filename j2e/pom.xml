@@ -18,7 +18,6 @@
         <module>../cart</module>
         <module>../stateful-cart</module>
         <module>../stateless-cart</module>
-        <module>../database</module>
     </modules>
     <name>ISA :: The Cookie Factory :: J2E Backend</name>
 
