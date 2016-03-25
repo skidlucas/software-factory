@@ -40,7 +40,6 @@
             <properties>
                 <versions.javaee>6.0-6</versions.javaee>
                 <versions.openejb>4.7.3</versions.openejb>
-                <versions.tomee>1.7.3</versions.tomee>
             </properties>
         </profile>
         <profile>
@@ -49,7 +48,6 @@
             <properties>
                 <versions.javaee>7.0-SNAPSHOT</versions.javaee>
                 <versions.openejb>5.0.0-SNAPSHOT</versions.openejb>
-                <versions.tomee>2.0.0-SNAPSHOT</versions.tomee>
             </properties>
         </profile>
     </profiles>
@@ -78,12 +76,7 @@
             <version>${versions.openejb}</version>
             <scope>test</scope>
         </dependency>
-        <dependency>
-            <groupId>org.apache.openejb</groupId>
-            <artifactId>tomee-embedded</artifactId>
-            <version>${versions.tomee}</version>
-            <scope>test</scope>
-        </dependency>
+
         <!-- Dependency to integrate REST clients (order matters for CXF) -->
         <dependency>
             <groupId>org.apache.openejb</groupId>
