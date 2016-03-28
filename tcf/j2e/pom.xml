@@ -40,6 +40,7 @@
             <properties>
                 <versions.javaee>6.0-6</versions.javaee>
                 <versions.openejb>4.7.3</versions.openejb>
+                <versions.tomee>1.7.3</versions.tomee>
             </properties>
         </profile>
         <profile>
@@ -48,6 +49,7 @@
             <properties>
                 <versions.javaee>7.0-SNAPSHOT</versions.javaee>
                 <versions.openejb>5.0.0-SNAPSHOT</versions.openejb>
+                <versions.tomee>2.0.0-SNAPSHOT</versions.tomee>
             </properties>
         </profile>
     </profiles>
@@ -130,8 +132,6 @@
     </dependencies>
 
     <build>
-        <finalName>tcf-backend</finalName>
-        <defaultGoal>package</defaultGoal>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
