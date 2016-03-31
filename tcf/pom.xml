@@ -117,7 +117,9 @@
                     <deployOpenEjbApplication>true</deployOpenEjbApplication>
                 </configuration>
             </plugin>
+
         </plugins>
     </build>
+
     
 </project>
