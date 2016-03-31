@@ -49,13 +49,13 @@
     </dependencies>
 
     <repositories>
-        <repository>
+        <!--<repository>
             <id>central</id>
             <url>http://erebe-vm13.i3s.unice.fr/artifactory/libs-release-local</url>
             <snapshots>
                 <enabled>false</enabled>
             </snapshots>
-        </repository>
+        </repository>-->
         <repository>
             <id>snapshots</id>
             <url>http://erebe-vm13.i3s.unice.fr/artifactory/libs-snapshot-local</url>

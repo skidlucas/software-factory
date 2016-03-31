@@ -33,6 +33,7 @@ public abstract class CartBean implements CartModifier {
 	 * Protected method to update the cart of a given customer, shared by both stateful and stateless beans
 	 */
 	protected Set<Item> updateCart(Customer c, Item item) {
+		System.out.println("updateCart");
 		Set<Item> items = contents(c);
 		Optional<Item> existing = items.stream().filter(e -> e.getCookie().equals(item.getCookie())).findFirst();
 		if(existing.isPresent()) {

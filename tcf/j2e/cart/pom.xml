@@ -7,6 +7,7 @@
         <groupId>fr.unice.polytech.isa</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
+    <packaging>jar</packaging>
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>cart</artifactId>
@@ -28,6 +29,4 @@
             <version>1.0-SNAPSHOT</version>
         </dependency>
     </dependencies>
-
-
 </project>
