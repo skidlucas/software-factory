@@ -29,7 +29,6 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <versions.tomee.embedded>1.7.3</versions.tomee.embedded>
     </properties>
 
     <profiles>
@@ -42,7 +41,6 @@
             <properties>
                 <versions.javaee>6.0-6</versions.javaee>
                 <versions.openejb>4.7.3</versions.openejb>
-                <versions.tomee>1.7.3</versions.tomee>
             </properties>
         </profile>
         <profile>
@@ -51,7 +49,6 @@
             <properties>
                 <versions.javaee>7.0-SNAPSHOT</versions.javaee>
                 <versions.openejb>5.0.0-SNAPSHOT</versions.openejb>
-                <versions.tomee>2.0.0-SNAPSHOT</versions.tomee>
             </properties>
         </profile>
     </profiles>
@@ -133,57 +130,38 @@
 
     </dependencies>
 
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-surefire-plugin</artifactId>
-                <version>2.17</version>
-                <configuration>
-                    <!-- otherwise openejb embedded and tomee embedded shares the same context and EJBContainer is broken -->
-                    <reuseForks>false</reuseForks>
-                    <excludes>
-                        <exclude>**/*IntegrationTest.java</exclude>
-                    </excludes>
-                </configuration>
-                <executions>
-                    <execution>
-                        <id>integration-test</id>
-                        <goals>
-                            <goal>test</goal>
-                        </goals>
-                        <phase>integration-test</phase>
-                        <configuration>
-                            <excludes>
-                                <exclude>none</exclude>
-                            </excludes>
-                            <includes>
-                                <include>**/*IntegrationTest.java</include>
-                            </includes>
-                        </configuration>
-                    </execution>
-                </executions>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.1</version>
-                <configuration>
-                    <source>1.8</source>
-                    <target>1.8</target>
-                </configuration>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.openejb.maven</groupId>
-                <artifactId>tomee-maven-plugin</artifactId>
-                <version>${versions.tomee.embedded}</version>
-                <configuration>
-                    <!-- From TomEE to TomEE+ to support the web services stack -->
-                    <tomeeClassifier>plus</tomeeClassifier>
-                    <args>-Xmx512m -XX:PermSize=256m</args>
-                    <deployOpenEjbApplication>true</deployOpenEjbApplication>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
+    <!--<build>-->
+        <!--<plugins>-->
+            <!--<plugin>-->
+                <!--<groupId>org.apache.maven.plugins</groupId>-->
+                <!--<artifactId>maven-surefire-plugin</artifactId>-->
+                <!--<version>2.17</version>-->
+                <!--<configuration>-->
+                    <!--&lt;!&ndash; otherwise openejb embedded and tomee embedded shares the same context and EJBContainer is broken &ndash;&gt;-->
+                    <!--<reuseForks>false</reuseForks>-->
+                    <!--<excludes>-->
+                        <!--<exclude>**/*IntegrationTest.java</exclude>-->
+                    <!--</excludes>-->
+                <!--</configuration>-->
+                <!--<executions>-->
+                    <!--<execution>-->
+                        <!--<id>integration-test</id>-->
+                        <!--<goals>-->
+                            <!--<goal>test</goal>-->
+                        <!--</goals>-->
+                        <!--<phase>integration-test</phase>-->
+                        <!--<configuration>-->
+                            <!--<excludes>-->
+                                <!--<exclude>none</exclude>-->
+                            <!--</excludes>-->
+                            <!--<includes>-->
+                                <!--<include>**/*IntegrationTest.java</include>-->
+                            <!--</includes>-->
+                        <!--</configuration>-->
+                    <!--</execution>-->
+                <!--</executions>-->
+            <!--</plugin>-->
+            <!---->
+        <!--</plugins>-->
+    <!--</build>-->
 </project>

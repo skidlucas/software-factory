@@ -12,7 +12,6 @@
     <modules>
         <module>business</module>
         <module>j2e</module>
-        <module>exec_j2e</module>
     </modules>
 
     <properties>
@@ -39,15 +38,6 @@
             </properties>
         </profile>
     </profiles>
-
-    <dependencies>
-        <dependency>
-            <groupId>org.apache.openejb</groupId>
-            <artifactId>tomee-embedded</artifactId>
-            <version>${versions.tomee}</version>
-            <scope>test</scope>
-        </dependency>
-    </dependencies>
 
     <repositories>
         <!--<repository>
@@ -107,18 +97,6 @@
                     <target>1.8</target>
                 </configuration>
             </plugin>
-            <plugin>
-                <groupId>org.apache.openejb.maven</groupId>
-                <artifactId>tomee-maven-plugin</artifactId>
-                <version>${versions.tomee.embedded}</version>
-                <configuration>
-                    <!-- From TomEE to TomEE+ to support the web services stack -->
-                    <tomeeClassifier>plus</tomeeClassifier>
-                    <args>-Xmx512m</args>
-                    <deployOpenEjbApplication>true</deployOpenEjbApplication>
-                </configuration>
-            </plugin>
-
         </plugins>
     </build>
 
