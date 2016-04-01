@@ -12,6 +12,7 @@
     <modules>
         <module>business</module>
         <module>j2e</module>
+        <module>exec_j2e</module>
     </modules>
 
     <properties>
