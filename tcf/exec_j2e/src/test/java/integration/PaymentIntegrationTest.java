@@ -41,6 +41,7 @@ public class PaymentIntegrationTest extends AbstractTCFTest {
 	}
 
 	@Test
+	@Ignore
 	public void integrationBetweenCustomersAndOrders() throws Exception {
 		registration.register("john", "1234-896983");
 		Customer retrieved = finder.findByName("john").get();
