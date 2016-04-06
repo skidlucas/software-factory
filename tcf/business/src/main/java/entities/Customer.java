@@ -1,6 +1,8 @@
 package entities;
 
 
+import com.sun.org.apache.xpath.internal.SourceTree;
+
 import java.io.Serializable;
 import java.util.HashSet;
 import java.util.Set;
@@ -12,7 +14,9 @@ public class Customer implements Serializable {
 	private Set<Order> orders = new HashSet<>();
 
 	public Customer() {}
-	public Customer(String n, String c) { this.name = n; this.creditCard = c; }
+	public Customer(String n, String c) {
+		System.out.println("en moi");
+		this.name = n; this.creditCard = c; }
 
 	public String getName() {
 		return name;
