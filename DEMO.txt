@@ -1,0 +1,21 @@
+Parler du découpage : 
+	- Répartir au maximum les responsabilités entre les modules
+             -> isoler les fonctionnalités 
+             -> Changement de versions plus faciles 
+	     -> Pas besoin de recompiler l'ensemble du projet ou un gros module, juste une petite partie
+
+Contexte : On arrive dans le projet, on veut modifier ou ajouter un module qui a des dépendances vers d'autres modules de l'application
+
+- vider les dependances du .m2
+- Je travaille sur catalogue, je fais mes modifs, je compile (mvn compile)
+ ==> On voit qu'il a téléchargé les artifacts sur artifactory 
+- Pierre modifie business, push la modification, build sur jenkins, push artifactory 
+ ==> Build bleu sur jenkins et build présent sur artifactory
+- si je recompile mon module en forcant l'update des snapshots, on voit que la modification est push sur ma machine
+ ==> retéléchargement des jars et update de la version snapshots dans le .m2 (ls -l ....)
+- Je push une modification ayant cassé le build
+- Jenkins en jaune / pas de push sur artifactory / donc pas d'impact de mon erreur sur le dev des autres
+- .Net démarré à la main
+- Parler du test d'intégration (On test le lien entre la gestion des users, le paiement et la kitchen au travers de l'OrderStatus)
+ 
+

@@ -48,5 +48,14 @@ public class PaymentIntegrationTest extends AbstractTCFTest {
 		assertTrue(retrieved.getOrders().contains(order));
 	}
 
+	@Test 
+	public void integrationBetweenStatusAndOrders() throws Exception {
+		registration.register("paul", "1234-896983");
+		Customer retrieved = finder.findByName("paul").get();
+		String id = cashier.payOrder(retrieved, items);
+		Assert.assertFalse(0, memory.getOrders().size());
+		Assert.assertTrue(OrderStatus.IN_PROGRESS, tracker.status(id));
+	}
+
 
 }
