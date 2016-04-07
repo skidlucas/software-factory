@@ -13,6 +13,7 @@ public class CatalogueBean implements CatalogueExploration {
 
 	@Override
 	public Set<Cookies> listPreMadeRecipes() {
+		System.out.println("j'aime les cookies");
 		return new HashSet(Arrays.asList(Cookies.values()));
 		//return new HashSet();
 	}
