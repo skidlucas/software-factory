@@ -5,11 +5,10 @@ import arquillian.AbstractTCFTest;
 import cart.Payment;
 import customer.registry.CustomerFinder;
 import customer.registry.CustomerRegistration;
-import entities.Cookies;
-import entities.Customer;
-import entities.Item;
-import entities.Order;
+import entities.*;
+import kitchen.Tracker;
 import org.jboss.arquillian.junit.Arquillian;
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -27,6 +26,7 @@ public class PaymentIntegrationTest extends AbstractTCFTest {
 	@EJB private Payment cashier;
 	@EJB private CustomerFinder finder;
 	@EJB private CustomerRegistration registration;
+	@EJB private Tracker tracker;
 
 	private Set<Item> items;
 
@@ -48,13 +48,17 @@ public class PaymentIntegrationTest extends AbstractTCFTest {
 		assertTrue(retrieved.getOrders().contains(order));
 	}
 
-	@Test 
+	@Test
 	public void integrationBetweenStatusAndOrders() throws Exception {
 		registration.register("paul", "1234-896983");
 		Customer retrieved = finder.findByName("paul").get();
 		String id = cashier.payOrder(retrieved, items);
-		Assert.assertFalse(0, memory.getOrders().size());
-		Assert.assertTrue(OrderStatus.IN_PROGRESS, tracker.status(id));
+		Assert.assertNotEquals(0, memory.getOrders().size());
+		Assert.assertEquals(OrderStatus.IN_PROGRESS, tracker.status(id));
+		registration.register("raul", "1234-896983");
+		retrieved = finder.findByName("raul").get();
+		id = cashier.payOrder(retrieved, items);
+		Assert.assertEquals(OrderStatus.READY, tracker.status(id));
 	}
 
 
