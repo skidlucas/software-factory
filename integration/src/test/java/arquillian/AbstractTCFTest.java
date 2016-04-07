@@ -3,10 +3,12 @@ package arquillian;
 import cart.CartModifier;
 import cart.components.CartBean;
 import cart.stateful.components.CartStatefulBean;
+import customer.registry.components.CustomerRegistryBean;
 import database.Database;
 import entities.Customer;
 import exceptions.AlreadyExistingCustomerException;
 import interceptors.Logger;
+import kitchen.components.KitchenBean;
 import org.jboss.arquillian.container.test.api.Deployment;
 import org.jboss.shrinkwrap.api.ShrinkWrap;
 import org.jboss.shrinkwrap.api.asset.EmptyAsset;
@@ -38,7 +40,9 @@ public abstract class AbstractTCFTest {
 				// Exceptions
 				.addPackage(AlreadyExistingCustomerException.class.getPackage())
 				// Components implementations
-				.addPackage(CartBean.class.getPackage());
+				.addPackage(CartBean.class.getPackage())
+		        .addPackage(KitchenBean.class.getPackage())
+                .addPackage(CustomerRegistryBean.class.getPackage());
 	}
 
 }
