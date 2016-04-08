@@ -15,7 +15,7 @@ public class Customer implements Serializable {
 
 	public Customer() {}
 	public Customer(String n, String c) {
-		System.out.println("il va faire tout noir");
+		System.out.println("il va faire tout noir!");
 		this.name = n; this.creditCard = c; }
 
 	public String getName() {
